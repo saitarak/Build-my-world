@@ -829,6 +829,23 @@
           </ode>
         </physics>
       </joint>
+      <joint name='link_0_JOINT_5' type='fixed'>
+        <parent>link_0</parent>
+        <child>link_2</child>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <physics>
+          <ode>
+            <limit>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </limit>
+            <suspension>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </suspension>
+          </ode>
+        </physics>
+      </joint>
       <joint name='link_0_clone_JOINT_2' type='revolute'>
         <parent>link_0_clone</parent>
         <child>link_1_clone_0</child>
@@ -893,15 +910,32 @@
           </ode>
         </physics>
       </joint>
+      <joint name='link_0_clone_JOINT_4' type='fixed'>
+        <parent>link_0_clone</parent>
+        <child>link_2</child>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <physics>
+          <ode>
+            <limit>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </limit>
+            <suspension>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </suspension>
+          </ode>
+        </physics>
+      </joint>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
       <pose frame=''>0.255714 0 0.228571 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>7 136000000</sim_time>
-      <real_time>7 163535076</real_time>
-      <wall_time>1647596800 982768083</wall_time>
-      <iterations>7136</iterations>
+      <sim_time>11 663000000</sim_time>
+      <real_time>11 697811115</real_time>
+      <wall_time>1647603766 922445749</wall_time>
+      <iterations>11663</iterations>
       <model name='Robot'>
         <pose frame=''>0.255714 0 0.228571 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -964,7 +998,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>1.45571 -1.12377 0.675035 0 0.275643 2.35619</pose>
+        <pose frame=''>3.37601 -3.35426 1.52406 0 0.275643 2.35619</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>

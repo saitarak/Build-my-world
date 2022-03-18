@@ -749,6 +749,23 @@
         </ode>
       </physics>
     </joint>
+    <joint name='link_0_JOINT_5' type='fixed'>
+      <parent>link_0</parent>
+      <child>link_2</child>
+      <pose frame=''>0 0 0 0 -0 0</pose>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
     <joint name='link_0_clone_JOINT_2' type='revolute'>
       <parent>link_0_clone</parent>
       <child>link_1_clone_0</child>
@@ -800,6 +817,23 @@
           <damping>0</damping>
         </dynamics>
       </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='link_0_clone_JOINT_4' type='fixed'>
+      <parent>link_0_clone</parent>
+      <child>link_2</child>
+      <pose frame=''>0 0 0 0 -0 0</pose>
       <physics>
         <ode>
           <limit>
