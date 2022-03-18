@@ -5,7 +5,7 @@ namespace gazebo
   {
     public:WorldPluginMyRobot():WorldPlugin()
         {
-          printf("Welcome to Robot's World!\n");
+          printf("Welcome to Tarak's World!\n");
         }
     public: void Load(physics::WorldPtr _world,sdf::ElementPtr _sdf)
         {
